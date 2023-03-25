@@ -7,4 +7,5 @@ def index(request):
 def profiles(request):
     return render(request, 'team.html')
 
-
+def contact(request):
+    return render(request, 'contact.html')
