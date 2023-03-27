@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+
+      <label for="role">Role:</label><br />
+      <input type="text" id="role" name="role" /><br />
+
+      <label for="department">Department:</label><br />
+      <input type="text" id="department" name="department" /><br />
+
+      <label for="contact">Contact:</label><br />
+      <input type="text" id="contact" name="contact" /><br />
+
+      <label for="year">Year:</label><br />
+      <input type="text" id="year" name="year" /><br />
+
+      <label for="alt_email">Alternate Email:</label><br />
+      <input type="email" id="alt_email" name="alt_email" /><br />
+
+      <label for="photo">Photo:</label><br />
+      <input type="file" id="photo" name="photo" /><br />
+
+      <label for="short_description">Short Description:</label><br />
+      <textarea id="short_description" name="short_description"></textarea
+      ><br />
+
+      <label for="long_description">Long Description:</label><br />
+      <textarea id="long_description" name="long_description"></textarea><br />
+
+      <label for="hall">Hall:</label><br />
+      <input type="text" id="hall" name="hall" /><br />
+
+      <label for="facebook_link">Facebook Link:</label><br />
+      <input type="url" id="facebook_link" name="facebook_link" /><br />
+
+      <label for="linkedin_link">LinkedIn Link:</label><br />
+      <input type="url" id="linkedin_link" name="linkedin_link" /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

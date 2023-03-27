@@ -3,3 +3,4 @@
 **/media
 home/migrations*
 .idea*
+venv/
