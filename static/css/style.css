@@ -8,7 +8,13 @@
 }
 
 /*** Spinner ***/
-
+.form-control:read-only {
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+input#image::file-selector-button {
+    display: none;
+  }
 #spinner {
     opacity: 0;
     visibility: hidden;
