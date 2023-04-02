@@ -52,11 +52,11 @@ def mentor(request):
             user_profile.photo = filename
 
             # print(fs)
-            print("filename", filename)
-            print("Uploaded file url", uploaded_file_url)
-            print(user_profile)
+            # print("filename", filename)
+            # print("Uploaded file url", uploaded_file_url)
+            # print(user_profile)
         user_profile.save()
 
-        return HttpResponse("Your account has been created")
+        return render(request, 'index.html', context={'status': 'Mentor account successfully created'})
 
-    return render(request, 'mentor.html')
+    return render(request, 'signUp.html')
